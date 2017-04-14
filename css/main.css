@@ -155,7 +155,7 @@ margin-bottom: 35px;
 	padding-left: 0px;
 }
 
-.span_2_of_3 .card button {
+button {
 	width: 107px;
 	height: 44px;
 	background-color: #98292b;
@@ -175,7 +175,7 @@ font-weight: 700;
 }
 
 .span_3_of_3 .card {
-	padding: 15px;
+	padding: 20px;
 }
 
 footer {
@@ -211,6 +211,18 @@ footer {
 	margin-top: -5px;
 	font-size: 14px;
 
+}
+
+.card h3 {
+	color: #98292b;
+}
+
+.thumbs img {
+	width: 100%;
+}
+
+.thumbs p {
+	padding: 0 0 15px 0;
 }
 
 /*  SECTIONS  */
