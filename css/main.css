@@ -80,28 +80,150 @@ nav button img {
 	margin-top: 0px;
 }
 
-.column-1 {
-	width: 335px;
-	padding-top: 68px;
-	float: left;
-	min-height: 100%;
-	background-color: #ebe6e6;
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 15; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: normal; /* Add a pointer on hover */
 }
 
-.column-2 {
-	width: 507px;
-	padding-top: 68px;
-	float: left;
-	background-color: #e3dddd;
-	min-height:100%;
+.video-overlay {
+	height: 800px;
+	width: 1294.4px;
+	background-color: #f9f9f9;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -400px;
+	margin-left: -647.2px;
+-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+float: left;
 }
 
-.column-3 {
-	width: 1000px;
-	padding-top: 68px;
+.thumb-overlay:hover {
+	cursor: pointer;
+}
+
+.video-player {
+	height: 500px;
+	width: 809px;
+	float:left;
+}
+
+.video-player video {
+	margin-top: -37px;
+}
+
+.vid-sidebar {
+	height: 100%;
+	width: 485.4px;
+	background-color: #f9f9f9;
+	float: right;
+}
+
+.vid-sidebar button {
+	float: right;
+	margin: 20px;
+}
+
+.vid-title {
+	width: 100%;
+	height: 150px;
+	background-color: #98292b;
+	margin-top: 85px;
+	color: #f9f9f9;
+	padding-top: 70px;
+	padding-left: 20px;
+}
+
+.vid-title h3, .vid-title h1 {
+	margin:0;
+}
+
+.vid-title h3 {
+	font-weight: 300;
+}
+
+.vid-title img {
+	float:right;
+	margin-top: -50px;
+	margin-right: 20px;
+}
+
+.vid-desc {
+	padding: 20px;
+-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+}
+
+.vid-comments-list {
+	max-height: 437px;
+	max-width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.vid-comment {
+	background-color: #98292b;
+	height:100px;
+	color: #f9f9f9;
+}
+
+.vid-comment img {
+	width: 99px;
 	float: left;
-	min-height:100%;
-	background-color: #dbd4d4;
+	margin-right: 20px;
+}
+
+.vid-comment h3 {
+	margin: 0;
+	padding-top: 30px;
+}
+
+.vid-comment h4 {
+	margin:0;
+	font-weight: 300;
+}
+
+.reply-butt {
+	height: 100%;
+	width: 100px;
+	background-color: #f5f5f5;
+	padding-top:32px;
+	padding-left: 40px;
+	float: left;
+	margin-right: 15px;
+}
+
+.more-vids {
+	width: 809px;
+	height: 301px;
+	clear: left;
+	padding:15px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.more-vids img {
+	width: 100%;
+}
+
+.comment-details {
+	height: 100px;
+}
+
+.comment-details p {
+	padding-right: 10px;
 }
 
 .vertical-menu {
@@ -149,19 +271,20 @@ margin-bottom: 35px;
 
 .span_2_of_3 .card {
 	background-image: url("../img/reviewimg.png");
-	height: 270px;
+	height: 215px;
 	padding: 26px;
 }
 
 .span_2_of_3 .card h6 {
 	color: #98292b;
-	margin: 0px 0px 5px 0px;
-	font-size: 16px;
+	margin: 0px 0px 0px 0px;
+	font-size: 14px;
 	font-weight: 700;
 }
 
 .span_2_of_3 .card h5 {
 	padding-left: 0px;
+	margin-bottom:15px;
 }
 
 button {
@@ -178,11 +301,19 @@ padding-left: 10px;
 padding-right: 10px;
 }
 
+button:hover {
+	background-color: #7d2022;
+	transition: background-color 0.5s ease;
+}
+
 .span_2_of_3 .card h2 {
 	color: #212121;
 	padding-left: 0px;
 	font-size: 20px;
-	padding-right: 60px;
+	padding-right: 0px;
+	margin:0;
+	margin-top:5px;
+	margin-bottom: 12px;
 }
 
 .span_3_of_3 .card {
